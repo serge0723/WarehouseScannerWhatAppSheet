@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { Product, AppSettings, StockStatus } from '../types';
-import { getStockStatus, getStatusColor, getStatusBg, generateWhatsAppLink } from '../utils';
+import { Product, AppSettings, StockStatus } from '../types.ts';
+import { getStockStatus, getStatusColor, getStatusBg, generateWhatsAppLink } from '../utils.ts';
 import { MapPin, Barcode, Calendar, MessageSquare, ArrowLeft, RefreshCcw, Plus, Minus, CheckCircle2 } from 'lucide-react';
 
 interface ProductDetailProps {

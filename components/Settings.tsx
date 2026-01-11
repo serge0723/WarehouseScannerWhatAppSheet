@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { AppSettings } from '../types';
-import { testWebhookConnection, WEBHOOK_URL } from '../utils';
+import { AppSettings } from '../types.ts';
+import { testWebhookConnection, WEBHOOK_URL } from '../utils.ts';
 import { User, Phone, Save, Info, CheckCircle2, CloudSync, Loader2, AlertCircle, Link2, ExternalLink } from 'lucide-react';
 
 interface SettingsProps {

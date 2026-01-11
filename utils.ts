@@ -1,5 +1,5 @@
 
-import { StockStatus, Product, AppSettings, ScanRecord } from './types';
+import { StockStatus, Product, AppSettings, ScanRecord } from './types.ts';
 
 // The endpoint for your Google Apps Script Web App
 export const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwM3CCw7_MsOVi2W-fj_o2tdxYb9Bc-8bvmnQRczOLUYP0nRfe9ZR9292f8LKUA5Q_g/exec';

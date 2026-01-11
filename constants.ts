@@ -1,5 +1,5 @@
 
-import { Product } from './types';
+import { Product } from './types.ts';
 
 export const SAMPLE_INVENTORY: Product[] = [
   {id: 1, name: "Wireless Mouse M185", sku: "WM-185-BLK", barcode: "4902778918856", stock: 15, location: "A-12-3", threshold: 20},

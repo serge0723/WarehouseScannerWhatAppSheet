@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { AppView, Product, ScanRecord, AppSettings } from './types';
-import { SAMPLE_INVENTORY, STORAGE_KEYS } from './constants';
-import Dashboard from './components/Dashboard';
-import Scanner from './components/Scanner';
-import Settings from './components/Settings';
-import ProductDetail from './components/ProductDetail';
-import { syncToGoogleSheet } from './utils';
+import { AppView, Product, ScanRecord, AppSettings } from './types.ts';
+import { SAMPLE_INVENTORY, STORAGE_KEYS } from './constants.ts';
+import Dashboard from './components/Dashboard.tsx';
+import Scanner from './components/Scanner.tsx';
+import Settings from './components/Settings.tsx';
+import ProductDetail from './components/ProductDetail.tsx';
+import { syncToGoogleSheet } from './utils.ts';
 import { LayoutGrid, Camera, Settings as SettingsIcon, CloudCheck } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -86,7 +86,7 @@ const App: React.FC = () => {
             settings={settings}
             onBack={() => setCurrentView('DASHBOARD')}
             onRescan={() => setCurrentView('SCANNER')}
-            onSync={() => Promise.resolve()} // No longer used for auto-sync on this screen
+            onSync={() => Promise.resolve()} 
           />
         ) : <Dashboard history={history} onScanClick={() => setCurrentView('SCANNER')} />;
       default:

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { ScanRecord, StockStatus } from '../types';
-import { getStockStatus, getStatusBg } from '../utils';
+import { ScanRecord, StockStatus } from '../types.ts';
+import { getStockStatus, getStatusBg } from '../utils.ts';
 import { BarChart3, Clock, Filter, AlertTriangle, CheckCircle, PackageSearch } from 'lucide-react';
 
 interface DashboardProps {
