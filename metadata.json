@@ -1,0 +1,7 @@
+{
+  "name": "Warehouse Scanner Pro",
+  "description": "An industrial-grade mobile scanner for warehouse inventory management with WhatsApp alerts.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
